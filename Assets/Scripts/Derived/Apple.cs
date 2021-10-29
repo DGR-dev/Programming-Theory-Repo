@@ -9,9 +9,9 @@ public class Apple : Fruit
         transform.localScale = new Vector3(size, size, size);
     }
 
-    // Polymorphism
-    protected override void ShowName()
+    // POLYMORPHISM
+    public override string ShowName()
     {
-        print($"I am {nameOfObject}");
+        return "I am " +nameOfObject;
     }
 }

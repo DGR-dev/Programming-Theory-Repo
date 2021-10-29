@@ -10,11 +10,6 @@ public class TitleScreen : MonoBehaviour
     {
         SceneManager.LoadScene(1);
     }
-
-    public void LoadMainScene()
-    {
-        SceneManager.LoadScene(0);
-    }
     
     public void QuitApplication()
     {

@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Banana : Fruit
 {
-    // Encapsulation
+    // ENCAPSULATION
     private string _nameOfObject;
     public string nameOfObject
     {
@@ -12,9 +12,9 @@ public class Banana : Fruit
         }
     }
 
-    protected override void ShowName()
+    public override string ShowName()
     {
-        print(nameOfObject);
+       return nameOfObject;
     }
     
     protected override void SetSize()

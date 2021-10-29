@@ -12,12 +12,11 @@ public abstract class Fruit : MonoBehaviour
     protected void Start()
     {
         _meshRenderer = GetComponent<MeshRenderer>();
-        // Abstraction
+        // ABSTRACTION
         SetColor();
-        ShowName();
     }
     
-    // Inheritance
+    // INHERITANCE
     protected abstract void SetSize();
 
     protected virtual void SetColor()
@@ -25,8 +24,9 @@ public abstract class Fruit : MonoBehaviour
         _meshRenderer.material.color = fruitColor;
     }
     
-    protected virtual void ShowName()
+    public virtual string ShowName()
     {
-        print(nameOfObject);
+        return nameOfObject;
     }
+
 }
